@@ -745,7 +745,6 @@ section.service-listings{
     padding: 20px 0px;
     display: flex;
     align-items: flex-start;
-    justify-content: flex-start;
     flex-wrap: wrap;
 }
 .side-lft{
@@ -817,6 +816,9 @@ section.service-listings{
 
 .side-rgt{
     margin: 10px;
+    width: 100%;
+    min-width: 280px;
+    max-width: 800px;
 }
 .side-rgt-head h2{
     font-size: 30px;
@@ -841,10 +843,13 @@ section.service-listings{
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
     overflow: hidden;
 }
 .side-rgt-card .profile-info{
     width: 100%;
+    max-width: 550px;
     min-width: 280px;
     padding: 16px;
 }
@@ -853,10 +858,12 @@ section.service-listings{
     display: flex;
     align-items: flex-start;
     justify-content: space-between; 
+    flex-wrap: wrap;
     border-bottom: 1px solid var(--grey);
     padding: 10px 0px;
 }
 .p-top-left{
+    min-width: 280px;
     display: flex;
     align-items: flex-start;
     justify-content: flex-start; 
@@ -868,7 +875,20 @@ section.service-listings{
 .p-top-left .p-image img{
     width: 100%;
 }
+.p-top-left h2{
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--color);
+}
+.p-top-left p{
+    font-size: 12px;
+    font-weight: 500;
+}
+.p-top-right{
+    min-width: fit-content;
+}
 .p-top-right p{
+    font-size: 12px;
     font-weight: 500;
     width: 100%;
 }
@@ -881,10 +901,11 @@ section.service-listings{
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
+    flex-wrap: wrap;
 }
 .p-btm-left{
     width: 100%;
-    max-width: 200px;
+    max-width: 180px;
 }
 .p-btm-left p{
     margin: 0px 0px 10px;
@@ -892,7 +913,7 @@ section.service-listings{
 .p-btm-right{
     width: 100%;
     min-width: 280px;
-    max-width: 368px;
+    max-width: 336px;
 }
 .p-tags{
     width: 100%;
@@ -909,9 +930,6 @@ section.service-listings{
 }
 .side-rgt-card .profile-access{
     height: 100%;
-    width: 100%;
-    min-width: 230px;
-    max-width: 240px;
     padding: 20px;
     background-color: #f3f4f6;
 }
@@ -945,3 +963,240 @@ section.service-listings{
     margin: 0px 0px 0px 10px;
 }
 /* == || SERVICE PAGE == */
+
+/* == PROFILE PAGE == */
+section.profile-bn{
+    width: 100%;
+    background-color: var(--grey);
+}
+.profile-back-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+}
+.profile-back-img img{
+    width: 100%;
+}
+.pfile-pg-name{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    padding: 10px 0px;
+}
+.pfile-pg-nm-img{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.pfile-pg-name img{
+    height: 70px;
+    width: 70px;
+    margin: 0px 20px 0px 0px;
+}
+.pfile-pg-names h2.pfl-name{
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--color);
+}
+.pfile-pg-names p.pfl-location a{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--black);
+    padding: 4px;
+}
+.pfile-pg-name button{
+    margin: 20px 0px;
+    height: 48px;
+    width: 180px;
+    border: 0px;
+    padding: 0px 12px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: var(--active-color);
+    color: var(--white);
+}
+.lawfrm-prfl-content{
+    height: fit-content;
+    width: 100%;
+    padding: 60px 0px;
+}
+.lawfirm-content-container{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.lawfirm-left{
+    width: 100%;
+    max-width: 700px;
+    min-width: 280px;
+    margin: 10px;
+}
+.lawfirm-left .head{
+    padding: 10px 0px 20px;
+}
+.lawfirm-left .head h2{
+    font-size: 26px;
+    font-weight: 600;
+    color: var(--black);
+}
+.lawfirm-left .content p{
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--color);
+    margin: 10px 0px;
+}
+.lawfirm-left .content h2.service-title{
+    font-size: 26px;
+    font-weight: 600;
+    color: var(--black);
+    padding: 0px 10px;
+    border-left: 2px solid var(--color);
+    margin: 10px 0px;
+}
+.lawfirm-left .content ul{
+    padding-left: 30px;
+}
+.lawfirm-left .content ul li{
+    margin: 5px 0px;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--color);
+}
+.lawfirm-right{
+    width: 100%;
+    max-width: 350px;
+    min-width: 280px;
+    margin: 10px;
+    padding: 14px;
+    box-shadow: 2px 2px 12px #00000033;
+}
+.lawfirm-rating{
+    width: 100%;
+}
+.about-lawfirm-right h3,
+.lawfirm-practice-areas h3,
+.lawfirm-languages h3{
+    margin: 0px 0px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--black);
+}
+.lawfirm-practice-areas .areas,
+.lawfirm-languages .languages{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 0px 0px 20px;
+}
+.lawfirm-practice-areas .areas span,
+.lawfirm-languages .languages span{
+    padding: 2px 4px;
+    background-color: var(--grey);
+    border-radius: 2px;
+    margin: 4px;
+}
+.about-lawfirm-right p{
+    margin: 0px 0px 20px;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--color);
+}
+.lawfirm-rating .stars{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.lawfirm-rating .stars span{
+    height: 15px;
+    width: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 10px 0px 0px;
+}
+.lawfirm-rating .rating-btn button{
+    height: 48px;
+    width: 220px;
+    border: 0px;
+    padding: 2px 12px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: var(--grey);
+    color: var(--color);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.lawfirm-rating .rating-btn button svg{
+    margin: 0px 10px 0px 0px;
+    height: 20px;
+    fill: var(--color);
+}
+.prfl-areas{
+    padding: 40px 0px;
+    background-color: var(--grey);
+}
+.prfl-areas-container .head h2{
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--color);
+    margin: 0px 0px 20px;
+}
+.prfl-areas-content{
+    padding: 20px 0px;
+}
+.prfl-area-cards{
+    height: fit-content;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.prfl-area-card{
+    width: 100%;
+    max-width: 540px;
+    min-width: 280px;
+    padding: 20px 20px 40px;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: var(--white);
+    position: relative;
+}
+.prfl-area-card h3{
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--color);
+    margin: 0px 0px 12px;
+}
+.prfl-area-card p{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color);
+    margin: 10px 0px 20px;
+}
+.prfl-area-card-tags{
+    position: absolute;
+    bottom: -10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 0px 0px 20px;
+}
+.prfl-area-card-tags span{
+    padding: 2px 4px;
+    background-color: var(--grey);
+    border-radius: 2px;
+    margin: 4px;
+}
+/* == || PROFILE PAGE == */
